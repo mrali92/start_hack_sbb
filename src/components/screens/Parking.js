@@ -26,7 +26,7 @@ function Parking({props, navigation}) {
           "elementType": "labels.icon",
           "stylers": [
             {
-              "visibility": "off"
+              "visibility": "on"
             }
           ]
         },
@@ -186,8 +186,8 @@ function Parking({props, navigation}) {
             style={{width: "100%", height: "100%"}}
             provider={PROVIDER_GOOGLE}
             region={{
-                latitude: 46.937487476,
-                longitude: 7.3952379525,
+                latitude: 46.937987476,
+                longitude: 7.3957379525,
                 latitudeDelta: 0.005,
                 longitudeDelta: 0.005,
             }}
@@ -196,11 +196,11 @@ function Parking({props, navigation}) {
         > 
         <Marker 
             coordinate={{
-                latitude: 46.937487476,
-                longitude: 7.3952379525,
+                latitude: 46.937767476,
+                longitude: 7.395749525,
             }}
             onPress={() => setShowBookingModal(!showBookingModal)}
-            // image={require("../../../assets/marker.png")}
+            image={require("../../../assets/marker.png")}
             title="Bern Bümpliz Süd"
         />
         </MapView>

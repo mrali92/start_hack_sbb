@@ -1,20 +1,13 @@
 import React from 'react';
 import {View, Text, StyleSheet} from "react-native";
-import config from "../../config/config";
 import pr from "pr-unit";
 
 
 function SmallTitleBar(props) {
-    var textColor;
-    if(props.isDarkMode) {
-        textColor = "#FFFFFF";
-    } else {
-        textColor = "#000000";
-    }
 
     return(
         <View style={styles.topBar}>
-            <Text style={[{color: textColor}, styles.mainTitle]}>{props.title}</Text>
+            <Text style={[{color: "#000000"}, styles.mainTitle]}>{props.title}</Text>
         </View>
     )
 }
