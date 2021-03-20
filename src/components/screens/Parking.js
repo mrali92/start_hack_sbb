@@ -1,14 +1,17 @@
 import React, {useState, useEffect} from 'react';
 import SearchBar from "../container/SearchBar"
-import {StatusBar, TouchableOpacity, Text, StyleSheet, View} from "react-native"
+import {StatusBar, Dimensions, Image, Text, StyleSheet, View} from "react-native"
 import MapView, { PROVIDER_GOOGLE, Marker } from 'react-native-maps';
-import { Modal } from 'react-native';
+import { AnimatedCircularProgress } from 'react-native-circular-progress';
+import { TouchableOpacity } from 'react-native-gesture-handler';
+import {LineChart} from "react-native-chart-kit";
 
 // var data = require("../../../assets/mobilitat.json")
 
 function Parking({props, navigation}) {
 
     const [showBookingModal, setShowBookingModal] = useState(false);
+    const [showChartModal, setShowChartModal] = useState(false);
 
     const mapStyle = [
         {
@@ -202,15 +205,85 @@ function Parking({props, navigation}) {
         />
         </MapView>
        { showBookingModal && <View style={styles.modal}>
-        <Text style={styles.headline}>Test</Text>
-            <View style={styles.content}>
-                <View style={styles.col}>
-                    <Text>Supper</Text>
+        <Text style={styles.headline}>Bern Bümpliz Süd</Text>
+            <View style={styles.topText}>
+            <View style={{flexDirection: "row", alignItems: "center"}}>
+                <Image source={require("../../../assets/coin.png")} style={{width: 27, height: 27, tintColor: "red", marginHorizontal: 10}}></Image>
+                <Text style={styles.text}>CHF 1.00/h</Text>
                 </View>
-                <View style={styles.col}>
-                    <Text>Supper</Text>
+                <View style={{flexDirection: "row", alignItems: "center"}}>
+                <Image source={require("../../../assets/route.png")} style={{width: 26, height: 27, tintColor: "red", marginHorizontal: 10}}></Image>
+                <Text style={styles.text}>1.2km away</Text>
                 </View>
             </View>
+            <View style={[{paddingVertical: 15, flexDirection: "row"}]}>
+            <View style={{flexDirection: "row", alignItems: "center",}}>
+                <Image source={require("../../../assets/coin.png")} style={{width: 27, height: 27, tintColor: "red",marginLeft: 47, marginRight: 10}}></Image>
+                <Text style={styles.text}>CHF 5.00/24h</Text>
+                </View>
+                <View style={{flexDirection: "row", alignItems: "center", marginLeft: 60,}}>
+                <TouchableOpacity onPress={() => setShowChartModal(!showChartModal)}>
+                    <AnimatedCircularProgress
+                        size={50}
+                        width={9}
+                        fill={66}
+                        tintColor="#D12111"
+                        onAnimationComplete={() => console.log('onAnimationComplete')}
+                        backgroundColor="#3d5875" />
+                </TouchableOpacity>
+                </View>
+            </View>
+            <View style={{alignSelf: "center", justifyContent: "center", width: 120, marginTop: 10, height: 40, backgroundColor: "#D12111", borderRadius: 10}}>
+                <Text style={[styles.text, {alignSelf: "center", color: "#FFFFFF"}]}>Book now</Text>
+            </View>
+       </View>}
+       { showChartModal && <View style={styles.modal2}>
+       <LineChart
+    data={{
+      labels: ["6h", "8h", "10h", "12h", "14h", "16h", "18h", "20h", "22h"],
+      datasets: [
+        {
+          data: [
+            20,
+            40,
+            80,
+            80,
+            100,
+            80,
+            40,
+            20,
+            10,
+          ]
+        }
+      ]
+    }}
+    width={375} // from react-native
+    height={220}
+    // yAxisLabel="$"
+    yAxisSuffix="%"
+    yAxisInterval={1} // optional, defaults to 1
+    chartConfig={{
+      backgroundColor: "#e26a00",
+      backgroundGradientFrom: "#FFFFFF",
+      backgroundGradientTo: "#FFFFFF",
+      decimalPlaces: 2, // optional, defaults to 2dp
+      color: (opacity = 1) => `rgba(0, 0, 0, ${opacity})`,
+      labelColor: (opacity = 1) => `rgba(0, 0, 0, ${opacity})`,
+      style: {
+        borderRadius: 16
+      },
+      propsForDots: {
+        r: "3",
+        strokeWidth: "2",
+        // stroke: "#ffa726"
+      }
+    }}
+    bezier
+    style={{
+      marginVertical: 8,
+      borderRadius: 16
+    }}
+  />
        </View>}
        <SearchBar/>
         </View>
@@ -222,10 +295,10 @@ export default Parking;
 
 const styles = StyleSheet.create({
     headline: {
-        fontSize: 18,
-        fontWeight: "600",
-        paddingTop: 25,
         padding: 15,
+        fontSize: 22,
+        fontWeight: "600",
+        alignSelf: "center",
     },
     container: {
         // height: 390,
@@ -251,7 +324,7 @@ const styles = StyleSheet.create({
         justifyContent: "center",
     },
     modal: {
-        height: 200,
+        height: 240,
         width: "90%",
         position: "absolute",
         bottom: 10,
@@ -259,18 +332,29 @@ const styles = StyleSheet.create({
         borderRadius: 15, 
         backgroundColor: "#FFFFFF"
     },
+    modal2: {
+        height: 240,
+        width: "90%",
+        position: "absolute",
+        bottom: 260,
+        alignSelf:"center", 
+        borderRadius: 15, 
+        backgroundColor: "#FFFFFF"
+    },
     content: {
         flexDirection: "row",
+        justifyContent: "space-evenly"
     },
-    headline: {
-        padding: 10,
-        fontSize: 24,
+    topText: {
+        flexDirection: "row",
+        justifyContent: "space-evenly"
+    },
+    text: {
+        fontSize: 16,
         fontWeight: "600",
-        alignSelf: "center",
     },
     col: {
         width: "50%",
-        height: "100%",
         justifyContent: "center",
         alignItems: "center",
     }
