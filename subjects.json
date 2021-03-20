@@ -1,0 +1,152 @@
+[
+    {
+        "subject": "Mathematik",
+        "selected": false,
+        "index":"0"
+    },
+    {
+        "subject": "Englisch",
+        "selected": false,
+        "index":"1"
+    },
+    {
+        "subject": "Deutsch",
+        "selected": false,
+        "index":"2"
+    },
+    {
+        "subject": "Französisch",
+        "selected": false,
+        "index":"3"
+    },
+    {
+        "subject": "Latein",
+        "selected": false,
+        "index":"4"
+    },
+    {
+        "subject": "Spanisch",
+        "selected": false,
+        "index":"5"
+    },
+    {
+        "subject": "Niederländisch",
+        "selected": false,
+        "index":"6"
+    },
+    {
+        "subject": "Biologie",
+        "selected": false,
+        "index":"7"
+    },
+    {
+        "subject": "Physik",
+        "selected": false,
+        "index":"8"
+    },
+    {
+        "subject": "Chemie",
+        "selected": false,
+        "index":"9"
+    },
+    {
+        "subject": "Informatik",
+        "selected": false,
+        "index":"10"
+    },
+    {
+        "subject": "Junior-Ingenieur-Akademie",
+        "selected": false,
+        "index":"11"
+    },
+    {
+        "subject": "Mathe/Physik",
+        "selected": false,
+        "index":"12"
+    },
+    {
+        "subject": "Informatik/Politik",
+        "selected": false,
+        "index":"13"
+    },
+    {
+        "subject": "Englisch/Geschichte",
+        "selected": false,
+        "index":"14"
+    },
+    {
+        "subject": "Antike Studien",
+        "selected": false,
+        "index":"15"
+    },
+    {
+        "subject": "Deutsch/Kunst",
+        "selected": false,
+        "index":"16"
+    },
+    {
+        "subject": "Erdkunde",
+        "selected": false,
+        "index":"17"
+    },
+    {
+        "subject": "Sozialwissenschaften",
+        "selected": false,
+        "index":"18"
+    },
+    {
+        "subject": "Geschichte",
+        "selected": false,
+        "index":"19"
+    },
+    {
+        "subject": "Pädagogik",
+        "selected": false,
+        "index":"20"
+    },
+    {
+        "subject": "Philosophie",
+        "selected": false,
+        "index":"21"
+    },
+    {
+        "subject": "Politik",
+        "selected": false,
+        "index":"22"
+    },
+    {
+        "subject": "Kunst",
+        "selected": false,
+        "index":"23"
+    },
+    {
+        "subject": "Musik",
+        "selected": false,
+        "index":"24"
+    },
+    {
+        "subject": "Literatur",
+        "selected": false,
+        "index":"25"
+    },
+    {
+        "subject": "Vokalunterricht",
+        "selected": false,
+        "index":"26"
+    },
+    {
+        "subject": "Methodentraining",
+        "selected": false,
+        "index":"27"
+    },
+    {
+        "subject": "IT-Grundlagen",
+        "selected": false,
+        "index":"28"
+    },
+    {
+        "subject": "Sport",
+        "selected": false,
+        "index":"29"
+    }
+]

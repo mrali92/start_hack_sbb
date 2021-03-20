@@ -1,0 +1,6 @@
+module Pods_PRail {
+  umbrella header "Pods-PRail-umbrella.h"
+
+  export *
+  module * { export * }
+}
