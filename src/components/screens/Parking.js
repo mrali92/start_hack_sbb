@@ -200,7 +200,7 @@ function Parking({props, navigation}) {
                 longitude: 7.3952379525,
             }}
             onPress={() => setShowBookingModal(!showBookingModal)}
-            image={require("../../../assets/marker.png")}
+            // image={require("../../../assets/marker.png")}
             title="Bern Bümpliz Süd"
         />
         </MapView>
@@ -212,7 +212,7 @@ function Parking({props, navigation}) {
                 <Text style={styles.text}>CHF 1.00/h</Text>
                 </View>
                 <View style={{flexDirection: "row", alignItems: "center"}}>
-                <Image source={require("../../../assets/route.png")} style={{width: 26, height: 27, tintColor: "red", marginHorizontal: 10}}></Image>
+                <Image source={require("../../../assets/route.png")} style={{width: 26, height: 28, tintColor: "red", marginHorizontal: 10}}></Image>
                 <Text style={styles.text}>1.2km away</Text>
                 </View>
             </View>
@@ -246,13 +246,13 @@ function Parking({props, navigation}) {
           data: [
             20,
             40,
-            80,
+            60,
             80,
             100,
             80,
+            70,
+            60,
             40,
-            20,
-            10,
           ]
         }
       ]
@@ -262,11 +262,13 @@ function Parking({props, navigation}) {
     // yAxisLabel="$"
     yAxisSuffix="%"
     yAxisInterval={1} // optional, defaults to 1
+    withHorizontalLines={false}
+    withVerticalLines={false}
     chartConfig={{
       backgroundColor: "#e26a00",
       backgroundGradientFrom: "#FFFFFF",
       backgroundGradientTo: "#FFFFFF",
-      decimalPlaces: 2, // optional, defaults to 2dp
+      decimalPlaces: 0, // optional, defaults to 2dp
       color: (opacity = 1) => `rgba(0, 0, 0, ${opacity})`,
       labelColor: (opacity = 1) => `rgba(0, 0, 0, ${opacity})`,
       style: {
