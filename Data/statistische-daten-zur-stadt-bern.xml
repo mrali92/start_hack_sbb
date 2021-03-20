@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dcat="http://www.w3.org/ns/dcat#"
+  xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <dcat:Dataset rdf:about="https://ckan.opendata.swiss/dataset/db6c8a3f-945e-4405-aa99-784f89d0e483">
+    <dcat:theme rdf:resource="http://opendata.swiss/themes/statistical-basis"/>
+    <dcat:keyword xml:lang="de">stadtverwaltung</dcat:keyword>
+    <dcat:theme rdf:resource="http://opendata.swiss/themes/crime"/>
+    <dcat:theme rdf:resource="http://opendata.swiss/themes/construction"/>
+    <dct:relation>
+      <rdf:Description rdf:about="https://stadtrecht.bern.ch/lexoverview-home/lex-422_1">
+        <rdfs:label>Verordnung über die Statistik in der Stadt Bern (Statistikverordnung; STAV)</rdfs:label>
+      </rdf:Description>
+    </dct:relation>
+    <dct:title xml:lang="it">[DE: Statistische Daten zur Stadt Bern]</dct:title>
+    <dcat:theme rdf:resource="http://opendata.swiss/themes/education"/>
+    <dct:publisher>
+      <rdf:Description rdf:nodeID="Nb263f847a1ed4a25b224fbf2741aaf5a">
+        <rdfs:label>Statistik Stadt Bern</rdfs:label>
+      </rdf:Description>
+    </dct:publisher>
+    <dcat:theme rdf:resource="http://opendata.swiss/themes/territory"/>
+    <dcat:theme rdf:resource="http://opendata.swiss/themes/politics"/>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-09-03T07:23:37.106191</dct:modified>
+    <dct:identifier>Daten@statistik-stadt-bern</dct:identifier>
+    <dct:title xml:lang="fr">[DE: Statistische Daten zur Stadt Bern]</dct:title>
+    <dcat:contactPoint>
+      <vcard:Organization rdf:nodeID="N64986ece1aad4a6b89a2d38eff85357e">
+        <vcard:hasEmail rdf:resource="statistik@bern.ch"/>
+        <vcard:fn>Statistik Stadt Bern, Junkerngasse 47, Postfach, 3000 Bern 8, Tel. +41 31 321 75 31</vcard:fn>
+      </vcard:Organization>
+    </dcat:contactPoint>
+    <dcat:theme rdf:resource="http://opendata.swiss/themes/culture"/>
+    <dcat:theme rdf:resource="http://opendata.swiss/themes/industry"/>
+    <dcat:theme rdf:resource="http://opendata.swiss/themes/energy"/>
+    <dcat:keyword xml:lang="en"></dcat:keyword>
+    <dcat:theme rdf:resource="http://opendata.swiss/themes/geography"/>
+    <dcat:theme rdf:resource="http://opendata.swiss/themes/finances"/>
+    <dcat:keyword xml:lang="de">stadt-bern</dcat:keyword>
+    <dcat:theme rdf:resource="http://opendata.swiss/themes/social-security"/>
+    <dcat:theme rdf:resource="http://opendata.swiss/themes/health"/>
+    <dcat:theme rdf:resource="http://opendata.swiss/themes/trade"/>
+    <dcat:distribution>
+      <dcat:Distribution rdf:about="https://ckan.opendata.swiss/dataset/db6c8a3f-945e-4405-aa99-784f89d0e483/resource/c60509b5-3af1-4e24-b2cb-70a26127f93c">
+        <dct:title xml:lang="en"></dct:title>
+        <dct:description xml:lang="de"></dct:description>
+        <dcat:mediaType>application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</dcat:mediaType>
+        <dct:title xml:lang="de"></dct:title>
+        <dct:description xml:lang="fr"></dct:description>
+        <dct:language>de</dct:language>
+        <dct:description xml:lang="it"></dct:description>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-09-03T00:00:00</dct:issued>
+        <dct:description xml:lang="en"></dct:description>
+        <dct:title xml:lang="it"></dct:title>
+        <dct:rights>NonCommercialAllowed-CommercialAllowed-ReferenceRequired</dct:rights>
+        <dcat:downloadURL rdf:resource="https://www.bern.ch/themen/stadt-recht-und-politik/bern-in-zahlen/katost"/>
+        <dct:title xml:lang="fr"></dct:title>
+        <dcat:accessURL rdf:resource="https://www.bern.ch/themen/stadt-recht-und-politik/bern-in-zahlen/katost"/>
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dct:accrualPeriodicity rdf:resource="http://purl.org/cld/freq/continuous"/>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-09-03T00:00:00</dct:issued>
+    <dct:relation>
+      <rdf:Description rdf:about="http://www.bern.ch/politik-und-verwaltung/stadtverwaltung/prd/abteilung-aussenbeziehungen-und-statistik/statistik-stadt-bern">
+        <rdfs:label>Statistik Stadt Bern</rdfs:label>
+      </rdf:Description>
+    </dct:relation>
+    <dcat:keyword xml:lang="fr"></dcat:keyword>
+    <dct:title xml:lang="de">Statistische Daten zur Stadt Bern</dct:title>
+    <dcat:theme rdf:resource="http://opendata.swiss/themes/agriculture"/>
+    <dcat:landingPage>https://www.bern.ch/themen/stadt-recht-und-politik/bern-in-zahlen/katost</dcat:landingPage>
+    <dct:description xml:lang="de">Daten gegliedert nach den Kategorien der öffentlichen Statistik der Schweiz</dct:description>
+    <dct:description xml:lang="fr">[DE: Daten gegliedert nach den Kategorien der öffentlichen Statistik der Schweiz]</dct:description>
+    <dcat:theme rdf:resource="http://opendata.swiss/themes/mobility"/>
+    <dcat:theme rdf:resource="http://opendata.swiss/themes/legislation"/>
+    <dcat:theme rdf:resource="http://opendata.swiss/themes/prices"/>
+    <dcat:theme rdf:resource="http://opendata.swiss/themes/work"/>
+    <dcat:theme rdf:resource="http://opendata.swiss/themes/public-order"/>
+    <dct:title xml:lang="en">[DE: Statistische Daten zur Stadt Bern]</dct:title>
+    <dcat:keyword xml:lang="it"></dcat:keyword>
+    <dcat:theme rdf:resource="http://opendata.swiss/themes/tourism"/>
+    <dcat:keyword xml:lang="de">statistik</dcat:keyword>
+    <dcat:theme rdf:resource="http://opendata.swiss/themes/national-economy"/>
+    <dct:description xml:lang="it">[DE: Daten gegliedert nach den Kategorien der öffentlichen Statistik der Schweiz]</dct:description>
+    <dct:description xml:lang="en">[DE: Daten gegliedert nach den Kategorien der öffentlichen Statistik der Schweiz]</dct:description>
+    <dcat:theme rdf:resource="http://opendata.swiss/themes/population"/>
+    <dct:language>de</dct:language>
+    <dcat:theme rdf:resource="http://opendata.swiss/themes/administration"/>
+    <dct:relation>
+      <rdf:Description rdf:about="http://www.ethikrat-stat.ch/charta/">
+        <rdfs:label>Charta der öffentlichen Statistik der Schweiz</rdfs:label>
+      </rdf:Description>
+    </dct:relation>
+  </dcat:Dataset>
+</rdf:RDF>
