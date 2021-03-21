@@ -6,7 +6,7 @@ function AddButton(props) {
 
     return(
         <View>
-            <TouchableOpacity onPress={() => alert("de")} style={[{backgroundColor: "#7AA42F"},styles.container]}>
+            <TouchableOpacity onPress={() => alert("de")} style={[{backgroundColor: "#D72E1F"},styles.container]}>
                 <View style={styles.icon}>
                     <Image source={require("../../../assets/add.png")} style={{width: "37%", height:"37%", tintColor: "#FFFFFF"}}></Image>
                 </View>

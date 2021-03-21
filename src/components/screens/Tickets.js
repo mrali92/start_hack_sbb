@@ -5,7 +5,7 @@ import { SmallTitleBar, TicketCell } from '../presentation/index';
 
 const tickets = [{"price": "CHF 5", "time": "19. Mar 16:00 - 21:00", "station": "Bern Bümpliz Süd", "done": false},{"price": "CHF 5", "time": "18. Mar 16:00 - 21:00", "station": "Bern Bümpliz Süd", "done": true},{"price": "CHF 5", "time": "17. Mar 16:00 - 21:00", "station": "Bern Bümpliz Süd", "done": true},{"price": "CHF 5", "time": "16. Mar 16:00 - 21:00", "station": "Bern Bümpliz Süd", "done": true}]
 
-function Tickets({props, navigation}) {
+function Tickets() {
 
   function Item({item}) {
     return (
@@ -16,7 +16,7 @@ function Tickets({props, navigation}) {
           done={item.done}
         />
     );
-  };
+  }
 
 
     return(

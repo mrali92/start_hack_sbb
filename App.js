@@ -35,6 +35,7 @@ function Home() {
         inactiveTintColor: 'gray',
         showIcon: true,
         showLabel: true,
+        animationEnabled: false,
         style: {backgroundColor: "#FFFFFF"},
         
       }}>

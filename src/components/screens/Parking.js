@@ -8,7 +8,7 @@ import {LineChart} from "react-native-chart-kit";
 
 // var data = require("../../../assets/mobilitat.json")
 
-function Parking({props, navigation}) {
+function Parking() {
 
     const [showBookingModal, setShowBookingModal] = useState(false);
     const [showChartModal, setShowChartModal] = useState(false);
@@ -224,16 +224,19 @@ function Parking({props, navigation}) {
                 <View style={{flexDirection: "row", alignItems: "center", marginLeft: 60,}}>
                 <TouchableOpacity onPress={() => setShowChartModal(!showChartModal)}>
                     <AnimatedCircularProgress
-                        size={50}
-                        width={9}
+                        size={60}
+                        width={7}
                         fill={66}
+                        rotation={360}
                         tintColor="#D12111"
                         onAnimationComplete={() => console.log('onAnimationComplete')}
                         backgroundColor="#3d5875" />
+                        <Text style={{position: "absolute", top: 21, left: 15, fontWeight: "700"}} >66%</Text>
                 </TouchableOpacity>
+                <Text style={{position: "absolute", top: 62, left: -7}} >Occupancy</Text>
                 </View>
             </View>
-            <View style={{alignSelf: "center", justifyContent: "center", width: 120, marginTop: 10, height: 40, backgroundColor: "#D12111", borderRadius: 10}}>
+            <View style={{alignSelf: "center", justifyContent: "center", width: 120, marginTop: 17, height: 40, backgroundColor: "#D12111", borderRadius: 10}}>
                 <Text style={[styles.text, {alignSelf: "center", color: "#FFFFFF"}]}>Book now</Text>
             </View>
        </View>}
@@ -326,7 +329,7 @@ const styles = StyleSheet.create({
         justifyContent: "center",
     },
     modal: {
-        height: 240,
+        height: 250,
         width: "90%",
         position: "absolute",
         bottom: 10,
@@ -338,7 +341,7 @@ const styles = StyleSheet.create({
         height: 240,
         width: "90%",
         position: "absolute",
-        bottom: 260,
+        bottom: 270,
         alignSelf:"center", 
         borderRadius: 15, 
         backgroundColor: "#FFFFFF"
